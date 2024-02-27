@@ -19,7 +19,7 @@ function App() {
         <div>
           <Header handleSidenav={handleSidenavOpen} />
         </div>
-        <div>
+        <div className='m-6'>
           <Student />
         </div>
       </div>
