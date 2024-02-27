@@ -7,7 +7,8 @@
   --body_color: black;
   --link_color: navy;
   --icon_color: #61677a;
-  --header_shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* --header_shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  --header_shadow: none;
 }
 
 /* box-shadow:  */
@@ -17,7 +18,8 @@
   --body_color: white;
   --link_color: cyan;
   --icon_color: #b4b4b8;
-  --header_shadow: rgba(149, 157, 165, 0.2) 0px 4px 24px;
+  /* --header_shadow: rgba(149, 157, 165, 0.2) 0px 4px 24px; */
+  --header_shadow: none;
 }
 
 * {
