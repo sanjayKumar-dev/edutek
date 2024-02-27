@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import DarkMode from './component/darkMode/DarkMode';
+import DarkMode from './component/darkMode/DarkMode'
+import Header from './component/header/Header'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <Header />
+      {/* <header className="App-header">
         <DarkMode />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,9 +21,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
 
-export default App;
+export default App
