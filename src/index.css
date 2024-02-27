@@ -38,4 +38,5 @@ body {
 
 .header {
   box-shadow: var(--header_shadow);
+  width: 100%;
 }

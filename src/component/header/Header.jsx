@@ -1,12 +1,12 @@
 import React from 'react'
 import DarkMode from '../darkMode/DarkMode'
-import { Badge, Box, IconButton, Toolbar, Typography } from '@mui/material'
+import { Badge, IconButton, Toolbar, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import AccountCircle from '@mui/icons-material/AccountCircle'
 import MailIcon from '@mui/icons-material/Mail'
 import NotificationsIcon from '@mui/icons-material/Notifications'
 
-const Header = () => {
+const Header = ({ handleSidenav }) => {
     return (
         <header className='header'>
             <div className='flex justify-between'>
@@ -17,6 +17,7 @@ const Header = () => {
                         color="inherit"
                         aria-label="open drawer"
                         sx={{ mr: 2 }}
+                        onClick={handleSidenav}
                     >
                         <MenuIcon className='icon' />
                     </IconButton>
