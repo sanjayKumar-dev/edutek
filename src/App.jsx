@@ -5,7 +5,7 @@ import Sidenav from './component/sidenav/Sidenav'
 import Student from './component/student/Student'
 
 function App() {
-  const [isSidenavOpen, setIsSidenavOpen] = useState(false)
+  const [isSidenavOpen, setIsSidenavOpen] = useState(true)
   const handleSidenavOpen = () => {
     setIsSidenavOpen(!isSidenavOpen)
   }
