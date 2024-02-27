@@ -3,3 +3,17 @@
   min-height: 100vh;
   color: var(--body_color);
 }
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+.sidenav {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.sidenav.open {
+  width: 18rem;
+}

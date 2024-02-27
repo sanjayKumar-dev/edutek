@@ -1,29 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-import DarkMode from './component/darkMode/DarkMode'
+import { useState } from 'react'
+import './App.css'
 import Header from './component/header/Header'
+import Sidenav from './component/sidenav/Sidenav'
+import Student from './component/student/Student'
 
 function App() {
+  const [isSidenavOpen, setIsSidenavOpen] = useState(false)
+  const handleSidenavOpen = () => {
+    setIsSidenavOpen(!isSidenavOpen)
+  }
+
   return (
-    <div className="app">
-      <Header />
-      {/* <header className="App-header">
-        <DarkMode />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+    <div className="app flex">
+      <div className={isSidenavOpen ? "sidenav open" : "sidenav"}>
+        <Sidenav />
+      </div>
+      <div className="content-wrapper">
+        <div>
+          <Header handleSidenav={handleSidenavOpen} />
+        </div>
+        <div>
+          <Student />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App
