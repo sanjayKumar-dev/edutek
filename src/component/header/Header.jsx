@@ -1,5 +1,5 @@
 import React from 'react'
-import DarkMode from '../darkMode/DarkMode.jsx'
+import DarkMode from './darkMode/DarkMode.jsx'
 import { Badge, IconButton, Toolbar, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import AccountCircle from '@mui/icons-material/AccountCircle'
