@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import DarkMode from './component/DarkMode/DarkMode';
+import DarkMode from './component/darkMode/DarkMode';
 
 function App() {
   return (
