@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './component/header/Header'
 import Sidenav from './component/sidenav/Sidenav'
-import Student from './component/student/Student'
+import { Outlet, RouterProvider } from 'react-router-dom'
+import appRoutes from './utils/routes'
 
 function App() {
   const [isSidenavOpen, setIsSidenavOpen] = useState(false)
@@ -24,7 +25,9 @@ function App() {
           <Header handleSidenav={handleSidenavOpen} />
         </div>
         <div className='m-6'>
-          <Student />
+          <RouterProvider router={appRoutes}>
+            <Outlet />
+          </RouterProvider>
         </div>
       </div>
     </div>
