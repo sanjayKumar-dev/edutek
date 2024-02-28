@@ -7,7 +7,7 @@ const PieChart = () => {
     const chartRef = useRef(null)
 
     useEffect(() => {
-        const chart = isDarkMode ? echarts.init(chartRef.current, 'dark') : echarts.init(chartRef.current)
+        const chart = echarts.init(chartRef.current, `${isDarkMode ? 'dark' : ''}`, { renderer: 'svg' })
         const options = {
             backgroundColor: `${isDarkMode ? 'rgb(33, 43, 54)' : ''}`,
             title: {
