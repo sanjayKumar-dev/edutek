@@ -9,6 +9,10 @@
   --icon_color: #61677a;
   /* --header_shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   --header_shadow: none;
+  --card_background: rgb(255, 255, 255);
+  --card_text_color: rgb(33, 43, 54);
+  --card-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
 }
 
 /* box-shadow:  */
@@ -20,6 +24,10 @@
   --icon_color: #b4b4b8;
   /* --header_shadow: rgba(149, 157, 165, 0.2) 0px 4px 24px; */
   --header_shadow: none;
+  --card_background: rgb(33, 43, 54);
+  --card_text_color: rgb(255, 255, 255);
+  --card-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.12) 0px 12px 24px -4px;
 }
 
 * {
@@ -59,4 +67,11 @@ body {
 .header {
   box-shadow: var(--header_shadow);
   width: 100%;
+}
+
+.card-container {
+  background-color: var(--card_background);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  color: var(--card_text_color);
 }
