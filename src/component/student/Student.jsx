@@ -1,8 +1,12 @@
 import React from 'react'
+import './Student.css'
+import WelcomeCard from './WelcomeCard'
 
 const Student = () => {
     return (
-        <div className='text-2xl font-semibold'>Hi, Welcome back 👋</div>
+        <div>
+            <WelcomeCard />
+        </div>
     )
 }
 
