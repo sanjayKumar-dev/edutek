@@ -4,9 +4,12 @@ import Header from './component/header/Header'
 import Sidenav from './component/sidenav/Sidenav'
 import { Outlet, RouterProvider } from 'react-router-dom'
 import appRoutes from './utils/routes'
+import DarkthemeContext from './utils/DarkthemeContext'
 
 function App() {
   const [isSidenavOpen, setIsSidenavOpen] = useState(false)
+  const [isDarkTheme, setIsDarkTheme] = useState(false)
+
   const handleSidenavOpen = () => {
     setIsSidenavOpen(!isSidenavOpen)
   }
@@ -16,21 +19,25 @@ function App() {
   }, [])
 
   return (
-    <div className="app flex">
-      <div className={isSidenavOpen ? "sidenav open" : "sidenav"}>
-        <Sidenav />
-      </div>
-      <div className="content-wrapper">
-        <div>
-          <Header handleSidenav={handleSidenavOpen} />
+    <DarkthemeContext.Provider value={{ isDarkMode: isDarkTheme, setIsDarkTheme }}>
+      <div className="app flex">
+        <div className={isSidenavOpen ? "sidenav open" : "sidenav"}>
+          <Sidenav />
         </div>
-        <div className='m-6'>
-          <RouterProvider router={appRoutes}>
-            <Outlet />
-          </RouterProvider>
+        <div className="content-wrapper">
+          <div>
+            <Header handleSidenav={handleSidenavOpen} />
+          </div>
+          <div className='m-6'>
+            <RouterProvider router={appRoutes}>
+              <Outlet />
+            </RouterProvider>
+          </div>
         </div>
       </div>
-    </div>
+
+    </DarkthemeContext.Provider>
+
   )
 }
 

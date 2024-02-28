@@ -10,9 +10,9 @@ const Sidenav = () => {
             <div className='mt-4'>
                 {studentDashboardList.map((iconObj) => {
                     return (
-                        <div className={`flex p-3 m-2 cursor-pointer ${selected === iconObj.id ? 'selected-tab' : 'icon'}`} key={iconObj.id} onClick={() => setSelected(iconObj.id)}>
+                        <div className={`flex px-4 py-3 mx-2 cursor-pointer ${selected === iconObj.id ? 'selected-tab' : 'icon'}`} key={iconObj.id} onClick={() => setSelected(iconObj.id)}>
                             {iconObj.icon}
-                            <h3 className='ms-4'>{iconObj.name}</h3>
+                            <h3 className='ms-4 text-sm'>{iconObj.name}</h3>
                         </div>
                     )
                 })}
