@@ -9,7 +9,7 @@ const PieChart = () => {
     useEffect(() => {
         const chart = echarts.init(chartRef.current, `${isDarkMode ? 'dark' : ''}`, { renderer: 'svg' })
         const options = {
-            backgroundColor: `${isDarkMode ? 'rgb(33, 43, 54)' : ''}`,
+            backgroundColor: '',
             title: {
                 text: 'Subject wise mark distribution',
                 left: 'center'
