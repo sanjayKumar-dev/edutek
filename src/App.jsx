@@ -5,6 +5,7 @@ import Sidenav from './component/sidenav/Sidenav'
 import { Outlet, RouterProvider } from 'react-router-dom'
 import appRoutes from './utils/routes'
 import DarkthemeContext from './utils/DarkthemeContext'
+import Footer from './component/footer/Footer'
 
 function App() {
   const [isSidenavOpen, setIsSidenavOpen] = useState(false)
@@ -32,6 +33,9 @@ function App() {
             <RouterProvider router={appRoutes}>
               <Outlet />
             </RouterProvider>
+          </div>
+          <div className='m-6'>
+            <Footer />
           </div>
         </div>
       </div>

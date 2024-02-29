@@ -1,0 +1,8 @@
+.footer-container {
+  li {
+    margin-left: 1rem;
+    cursor: pointer;
+    list-style-type: none;
+    color: rgb(0, 167, 111);
+  }
+}
