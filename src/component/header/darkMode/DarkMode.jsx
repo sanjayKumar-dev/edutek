@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { ReactComponent as Sun } from "./Sun.svg";
-import { ReactComponent as Moon } from "./Moon.svg";
-import "./DarkMode.css";
-import DarkthemeContext from "../../../utils/DarkthemeContext";
+import React, { useContext } from "react"
+import { ReactComponent as Sun } from "./Sun.svg"
+import { ReactComponent as Moon } from "./Moon.svg"
+import "./DarkMode.css"
+import DarkthemeContext from "../../../utils/DarkthemeContext"
 
 const DarkMode = () => {
 
@@ -45,7 +45,7 @@ const DarkMode = () => {
                 <Moon />
             </label>
         </div>
-    );
-};
+    )
+}
 
-export default DarkMode;
+export default DarkMode
