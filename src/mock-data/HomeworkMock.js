@@ -1,6 +1,6 @@
 const formatDate = (day) => {
-    const updatedDate = new Date(new Date().getTime() + (day * 24 * 60 * 60 * 1000));
-    return updatedDate.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+    const updatedDate = new Date(new Date().getTime() + (day * 24 * 60 * 60 * 1000))
+    return updatedDate.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
 export const HomeworkPendingLists = [
