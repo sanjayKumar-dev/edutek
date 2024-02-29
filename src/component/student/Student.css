@@ -9,3 +9,11 @@
   border-radius: 16px;
   height: 100%;
 }
+
+.pending-chip {
+  background-color: #d24545;
+  color: rgb(255, 255, 255);
+  border-radius: 16px;
+  height: 100%;
+  padding: 1px 10px 1px 10px;
+}
