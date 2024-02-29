@@ -25,6 +25,17 @@ const Student = () => {
                     <Homework headers={HomeworkPendingHeader} data={HomeworkPendingLists} />
                 </div>
             </div>
+            <div className='flex'>
+                <div className='w-4/12 card-container px-4 pt-2 h-52'>
+
+                </div>
+                <div className='w-4/12 card-container px-4 pt-2 h-52 ms-3'>
+
+                </div>
+                <div className='w-4/12 card-container px-4 pt-2 h-52 ms-3'>
+
+                </div>
+            </div>
 
 
         </div>
