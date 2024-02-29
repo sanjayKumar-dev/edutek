@@ -50,7 +50,7 @@ const PieChart = () => {
         }
     }, [isDarkMode])
     return (
-        <div ref={chartRef} style={{ height: '20rem' }} />
+        <div ref={chartRef} style={{ height: '18rem' }} />
     )
 }
 

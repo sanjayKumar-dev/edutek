@@ -22,7 +22,7 @@ function App() {
     <DarkthemeContext.Provider value={{ isDarkMode: isDarkTheme, setIsDarkTheme }}>
       <div className="app flex">
         <div className={isSidenavOpen ? "sidenav open" : "sidenav"}>
-          <Sidenav />
+          <Sidenav isOpen={isSidenavOpen} handleSidenav={handleSidenavOpen} />
         </div>
         <div className="content-wrapper">
           <div>

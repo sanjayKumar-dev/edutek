@@ -3,3 +3,9 @@
   color: rgb(0, 167, 111);
   background-color: rgba(0, 167, 111, 0.16);
 }
+
+.sidenav-div {
+  background-color: var(--body_background);
+  height: 100%;
+  width: 100%;
+}

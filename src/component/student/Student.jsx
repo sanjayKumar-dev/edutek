@@ -19,6 +19,9 @@ const Student = () => {
                 <div className='w-6/12 card-container my-4 px-4 pt-2'>
                     <PieChart />
                 </div>
+                <div className='ms-3 w-6/12 card-container my-4 px-4 pt-2'>
+                    <DayInfo />
+                </div>
             </div>
 
 

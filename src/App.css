@@ -4,17 +4,16 @@
   color: var(--body_color);
 }
 
-.content-wrapper {
+/* .content-wrapper {
   flex-grow: 1;
-}
+} */
 
 .sidenav {
   width: 0;
-  overflow: hidden;
   transition: width 0.3s ease;
   border-right: 1px dashed rgba(145, 158, 171, 0.2);
 }
 
 .sidenav.open {
-  width: 20rem;
+  width: auto;
 }
