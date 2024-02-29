@@ -3,6 +3,8 @@ import './Student.css'
 import WelcomeCard from './WelcomeCard'
 import DayInfo from '../dayInfo/DayInfo'
 import PieChart from '../chart/PieChart'
+import Homework from './Homework'
+import { HomeworkPendingHeader, HomeworkPendingLists } from '../../mock-data/HomeworkMock'
 
 const Student = () => {
     return (
@@ -19,8 +21,8 @@ const Student = () => {
                 <div className='w-6/12 card-container my-4 px-4 pt-2'>
                     <PieChart />
                 </div>
-                <div className='ms-3 w-6/12 card-container my-4 px-4 pt-2'>
-                    <DayInfo />
+                <div className='w-6/12 my-4 ms-3'>
+                    <Homework headers={HomeworkPendingHeader} data={HomeworkPendingLists} />
                 </div>
             </div>
 
