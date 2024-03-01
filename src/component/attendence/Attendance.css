@@ -1,0 +1,39 @@
+.calendar {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.month-header {
+  text-align: center;
+}
+
+.day-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day-box {
+  width: calc(100% / 8);
+  height: 25px;
+  border: 1px solid #ccc;
+  text-align: center;
+  /* line-height: 25px; */
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 8px;
+}
+
+.day-box-borderless {
+  width: calc(100% / 8);
+  height: 25px;
+  text-align: center;
+  margin: 2px;
+}
+.week-day {
+  width: calc(100% / 8);
+  text-align: center;
+  margin: 2px;
+}
+.absent {
+  background-color: red;
+}
