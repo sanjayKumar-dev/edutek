@@ -5,6 +5,7 @@ import DayInfo from '../dayInfo/DayInfo'
 import PieChart from '../chart/PieChart'
 import Homework from './Homework'
 import { HomeworkPendingHeader, HomeworkPendingLists } from '../../mock-data/HomeworkMock'
+import Attendance from '../attendence/Attendance'
 
 const Student = () => {
     return (
@@ -26,13 +27,13 @@ const Student = () => {
                 </div>
             </div>
             <div className='flex'>
-                <div className='w-4/12 card-container px-4 pt-2 h-52'>
+                <div className='w-4/12 card-container px-4 pt-2 py-2'>
+                    <Attendance />
+                </div>
+                <div className='w-4/12 card-container px-4 pt-2  ms-3'>
 
                 </div>
-                <div className='w-4/12 card-container px-4 pt-2 h-52 ms-3'>
-
-                </div>
-                <div className='w-4/12 card-container px-4 pt-2 h-52 ms-3'>
+                <div className='w-4/12 card-container px-4 pt-2 ms-3'>
 
                 </div>
             </div>

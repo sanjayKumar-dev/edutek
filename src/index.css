@@ -7,7 +7,6 @@
   --body_color: black;
   --link_color: navy;
   --icon_color: #61677a;
-  /* --header_shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   --header_shadow: none;
   --card_background: rgb(255, 255, 255);
   --card_text_color: rgb(33, 43, 54);
@@ -15,14 +14,11 @@
     rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
 }
 
-/* box-shadow:  */
-
 [data-theme="dark"] {
   --body_background: rgb(22, 28, 36);
   --body_color: white;
   --link_color: cyan;
   --icon_color: #b4b4b8;
-  /* --header_shadow: rgba(149, 157, 165, 0.2) 0px 4px 24px; */
   --header_shadow: none;
   --card_background: rgb(33, 43, 54);
   --card_text_color: rgb(255, 255, 255);
