@@ -10,16 +10,12 @@ const PieChart = () => {
         const chart = echarts.init(chartRef.current, `${isDarkMode ? 'dark' : ''}`, { renderer: 'svg' })
         const options = {
             backgroundColor: '',
-            title: {
-                text: 'Subject wise mark distribution',
-                left: 'center'
-            },
             tooltip: {
                 trigger: 'item'
             },
             legend: {
-                orient: 'vertical',
-                left: 'left'
+                top: '5%',
+                left: 'center'
             },
             series: [
                 {
@@ -48,7 +44,6 @@ const PieChart = () => {
             ]
         }
         chart.setOption(options)
-
         return () => {
             chart.dispose()
         }

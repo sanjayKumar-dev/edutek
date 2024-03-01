@@ -21,6 +21,7 @@ const Student = () => {
             </div>
             <div className='flex'>
                 <div className='w-6/12 card-container my-4 px-4 pt-2'>
+                    <h1 className='text-xl text-center font-semibold mt-4'>Subject wise mark's distribution</h1>
                     <PieChart />
                 </div>
                 <div className='w-6/12 my-4 ms-3'>
