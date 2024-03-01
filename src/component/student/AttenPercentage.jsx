@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef } from 'react'
 import * as echarts from 'echarts'
 import DarkthemeContext from '../../utils/DarkthemeContext'
 
-const PieChart = () => {
+const AttenPercentage = () => {
     const { isDarkMode } = useContext(DarkthemeContext)
     const chartRef = useRef(null)
 
@@ -10,40 +10,40 @@ const PieChart = () => {
         const chart = echarts.init(chartRef.current, `${isDarkMode ? 'dark' : ''}`, { renderer: 'svg' })
         const options = {
             backgroundColor: '',
-            title: {
-                text: 'Subject wise mark distribution',
-                left: 'center'
-            },
             tooltip: {
-                trigger: 'item'
+                trigger: 'item',
+                formatter: '{a} <br/>{b} : {d}%'
             },
             legend: {
-                orient: 'vertical',
-                left: 'left'
+                top: '5%',
+                left: 'center'
             },
             series: [
                 {
-                    name: 'Subject',
+                    name: 'Overall Attendence',
                     type: 'pie',
-                    radius: '50%',
+                    radius: ['70%', '55%'],
+                    avoidLabelOverlap: false,
                     label: {
                         show: true,
-                        formatter: '{b} : {c}'
+                        position: 'center',
+                        formatter: '{b} : {c}%'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: 30,
+                            fontWeight: 'bold'
+                        }
+                    },
+                    labelLine: {
+                        show: true
                     },
                     data: [
-                        { value: 81, name: 'English' },
-                        { value: 82, name: 'Maths' },
-                        { value: 78, name: 'Physics' },
-                        { value: 51, name: 'Chemistry' },
-                        { value: 91, name: 'Computer' }
+                        { value: 90, name: 'Present' },
+                        { value: 10, name: 'Absent' },
                     ],
-                    emphasis: {
-                        itemStyle: {
-                            shadowBlur: 10,
-                            shadowOffsetX: 0,
-                            shadowColor: 'rgba(0, 0, 0, 0.5)'
-                        }
-                    }
+                    color: ['#91cc75', '#ee6666']
                 }
             ]
         }
@@ -58,4 +58,4 @@ const PieChart = () => {
     )
 }
 
-export default PieChart
+export default AttenPercentage

@@ -6,6 +6,7 @@ import PieChart from '../chart/PieChart'
 import Homework from './Homework'
 import { HomeworkPendingHeader, HomeworkPendingLists } from '../../mock-data/HomeworkMock'
 import Attendance from '../attendence/Attendance'
+import AttenPercentage from './AttenPercentage'
 
 const Student = () => {
     return (
@@ -31,7 +32,7 @@ const Student = () => {
                     <Attendance />
                 </div>
                 <div className='w-4/12 card-container px-4 pt-2  ms-3'>
-
+                    <AttenPercentage />
                 </div>
                 <div className='w-4/12 card-container px-4 pt-2 ms-3'>
 
