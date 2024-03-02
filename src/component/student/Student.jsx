@@ -7,6 +7,7 @@ import Homework from './Homework'
 import { HomeworkPendingHeader, HomeworkPendingLists } from '../../mock-data/HomeworkMock'
 import Attendance from '../attendence/Attendance'
 import AttenPercentage from './AttenPercentage'
+import { AnnouncementHeader, AnnouncementMock } from '../../mock-data/announcements'
 
 const Student = () => {
     return (
@@ -25,7 +26,7 @@ const Student = () => {
                     <PieChart />
                 </div>
                 <div className='w-6/12 my-4 ms-3'>
-                    <Homework headers={HomeworkPendingHeader} data={HomeworkPendingLists} />
+                    <Homework headers={HomeworkPendingHeader} data={HomeworkPendingLists} title="Pending Homework" />
                 </div>
             </div>
             <div className='flex'>
@@ -35,8 +36,8 @@ const Student = () => {
                 <div className='w-4/12 card-container px-4 pt-2  ms-3'>
                     <AttenPercentage />
                 </div>
-                <div className='w-4/12 card-container px-4 pt-2 ms-3'>
-
+                <div className='w-4/12  ms-3'>
+                    <Homework headers={AnnouncementHeader} data={AnnouncementMock} title="Announcements" />
                 </div>
             </div>
 

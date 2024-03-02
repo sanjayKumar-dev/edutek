@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 
-function Homework({ headers, data }) {
+function Homework({ headers, data, title }) {
     return (
         <TableContainer className='px-4 pt-1' component={Paper} sx={{
             backgroundColor: 'var(--card_background)',
@@ -17,7 +17,7 @@ function Homework({ headers, data }) {
             width: '100%',
             color: 'var(--card_text_color)'
         }}>
-            <h1 className='text-xl text-center font-semibold my-4'>Pending Homework</h1>
+            <h1 className='text-xl text-center font-semibold my-4'>{title}</h1>
             <Table size="small" aria-label="a dense table" >
                 <TableHead>
                     <TableRow>
